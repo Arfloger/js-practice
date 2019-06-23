@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	position: relative;
+}
+
+.page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 96px;
+	font-weight: bold;
+	color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page01 {
+	background-image: url("http://avante.biz/wp-content/uploads/2017/03/Wallpapers-Sport-001.jpg");
+}
+
+.page02 {
+	background-image: url("https://images.unsplash.com/photo-1553531580-05e93057630b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+}
+
+.page03 {
+	background-image: url("http://eskipaper.com/images/sports-wallpaper-14.jpg");
+}
+
+.page04 {
+	background-image: url("https://avatars.mds.yandex.net/get-pdb/909209/cc69e9fe-1152-4537-a6ae-f9627c67a035/orig");
+}
+
+.page05 {
+	background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/HD-Running-Image.jpg");
+}
+
+.page06 {
+	background-image: url("https://wallpapercave.com/wp/wp2046110.jpg");
+}
