@@ -101,6 +101,7 @@ img {
 .button:not(.button--red):active {
   background: #fff;
   color: #000;
+  cursor: pointer;
 }
 
 .button--red {
