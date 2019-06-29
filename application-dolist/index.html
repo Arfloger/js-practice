@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>список дел</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <section class="main-list">
+      <div class="main-list__wrapper">
+        <h1 class="main-list__title">Список дел</h1>
+      </div>
+      <div class="case-row-wrapper">
+        <p>
+          <input type="text" id="newcase" placeholder="Что нужно сделать?" autofocus>
+        </p>
+        <button class="savecase">Сохранить</button>
+      </div>
+      <ul class="things-list"></ul>
+    </section>
+
+    <section class="completed">
+      <h2 class="title">Выполненные задачи:</h2>
+      <ul class="completed-list"></ul>
+    </section>
+    
+  </div>
+  <template id="template">
+    <li class="item">
+      <p>
+        <input class="project-checkbox" id="case1" type="checkbox">
+        <label class="project-label" for="case1"></label>
+      </p>
+      <button class="del-button" type="button"><span class="visually-hidden">Удалить задачу</span></button>
+    </li>
+  </template>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

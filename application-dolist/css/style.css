@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #dbd4d4;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-list {
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.main-list__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-list__title {
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.case-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.case-row-wrapper p {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.main-list input[type="text"] {
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom-left-radius: 5px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  color: #26a837;
+}
+
+.main-list input[type="text"]::placeholder {
+  color: #26a837;
+  text-transform: uppercase;
+}
+
+.main-list input[type="text"]:hover,
+.main-list input[type="text"]:focus {
+  border: 1px solid #26a837;
+  outline: none;
+}
+
+.savecase {
+  height: 36px;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #26a837;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  text-align: center;
+  vertical-align: middle;
+  border-top-right-radius: 5px;
+}
+
+.things-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.item {
+  position: relative;
+  padding: 0 20px;
+  margin: 20px 0;
+  background: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-right: 80px;
+  transition: all .4s;
+}
+
+.item p:hover {
+  color: #26a837;
+}
+
+.project-label {
+  padding: 15px 0;
+  margin-left: 20px;
+  margin-bottom: 0;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.project-checkbox {
+  cursor: pointer;
+}
+
+.del-button {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: rgba(209, 13, 13, 0.99);
+  cursor: pointer;
+  transition: all .4s;
+  outline: none !important;
+}
+
+.del-button::before,
+.del-button::after {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.del-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.item:hover .del-button,
+.item:focus .del-button {
+  opacity: 1;
+  display: block;
+}
+
+.completed {
+  display: none;
+}
+
+.completed-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.completed p {
+  text-decoration: line-through;
+  color: darkgray;
+}
+
+.completed p:hover {
+  color: darkgray;
+}
+
+.title {
+  text-transform: lowercase;
+}
+
+.completed.open {
+  display: block;
+}
