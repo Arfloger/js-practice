@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.scene {
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.layer {
+  position: absolute;
+  left: -10%;
+  right: 0;
+  width: 110%;
+  height: 100%;
+}
+
+.layer-bg {
+  background: url("img/l3.jpg") center no-repeat;
+  background-size: cover;
+  z-index: -1;
+} 
+
+.layer-1 {
+  background: url("img/l1.png") center no-repeat;
+  background-size: cover;
+} 
+
+.layer-2 {
+  background: url("img/l2.png") center no-repeat;
+  background-size: cover;
+} 
